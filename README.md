@@ -4,6 +4,12 @@
 ## Adding Karma
 *we'll do this part together*
 
+```
+sudo npm install -g karma
+sudo npm install -g karma-jasmine karma-requirejs
+sudo npm install -g karma-chrome-launcher karma-phantomjs-launcher
+```
+
 1. Clone this repository
 2. Run `karma init`
   1. Choose "Jasmine"
