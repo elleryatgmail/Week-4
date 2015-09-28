@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Wed Sep 23 2015 20:02:02 GMT-0400 (EDT)
+// Generated on Wed Sep 23 2015 20:05:30 GMT-0400 (EDT)
 
 module.exports = function(config) {
   config.set({
@@ -16,15 +16,15 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'test-main.js',
-      {pattern: 'js/app/**/*.js', included: false},
       {pattern: 'js/vendors/**/*.js', included: false},
-      {pattern: 'js/tests/**/*.js', included: false}
+      {pattern: 'js/app/**/*.js', included: false},
+      {pattern: 'js/tests/**/*Spec.js', included: false}
     ],
 
 
     // list of files to exclude
     exclude: [
-      'js/vendors/jasmine-core/**/*.js'
+	   'js/vendors/jasmine-core/**/*.js'
     ],
 
 
@@ -59,6 +59,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
+//    browsers: ['Chrome'],
     browsers: ['PhantomJS'],
 
 
